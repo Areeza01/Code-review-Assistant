@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Code Review AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>Code Review AI</h2>
+
+        <nav>
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="review.html">
+                Review Code
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>Dashboard</h1>
+
+        <p class="subtitle">
+            Monitor code quality, review history and AI insights
+        </p>
+
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="card stat">
+                <h3>Total Reviews</h3>
+
+                <span id="totalReviews">0</span>
+            </div>
+
+
+            <div class="card stat">
+                <h3>Issues Found</h3>
+
+                <span id="totalIssues">0</span>
+            </div>
+
+
+            <div class="card stat">
+                <h3>Average Score</h3>
+
+                <span id="averageScore">91%</span>
+            </div>
+
+
+            <div class="card stat">
+                <h3>Secure Files</h3>
+
+                <span id="secureFiles">85%</span>
+            </div>
+
+        </div>
+
+
+        <!-- Platform Overview -->
+        <div class="card">
+
+            <h2>Platform Overview</h2>
+
+            <p>
+                Intelligent Code Review Assistant leverages
+                static analysis and AI-powered evaluation
+                to identify security risks, maintainability
+                concerns and coding issues before deployment.
+            </p>
+
+        </div>
+
+
+        <!-- Recent Reviews -->
+        <div class="card">
+
+            <h2>Recent Reviews</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>File</th>
+                        <th>Language</th>
+                        <th>Issues</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyTable">
+
+                    <tr>
+                        <td colspan="4">
+                            Loading review history...
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

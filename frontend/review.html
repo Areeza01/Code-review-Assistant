@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Code | Code Review AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>Code Review AI</h2>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="review.html" class="active">Review Code</a>
+
+            <a href="about.html">About</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="content">
+
+        <h1>Review Code</h1>
+
+        <p class="subtitle">
+            Upload your source code and receive an AI-powered analysis.
+        </p>
+
+
+        <div class="upload-card">
+
+            <h2>Upload Source Code</h2>
+
+            <p>
+                Supported file types:
+                Python (.py) and JavaScript (.js)
+            </p>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".py,.js"
+            >
+
+            <button
+                type="button"
+                id="analyzeButton"
+                onclick="uploadCode()"
+            >
+                Analyze Code
+            </button>
+
+        </div>
+
+
+        
+
+
+        <div class="card">
+
+            <h2>AI Review Report</h2>
+
+            <pre id="report">Upload a file to begin analysis.</pre>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/review.js"></script>
+
+</body>
+</html>
+```
