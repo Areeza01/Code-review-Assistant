@@ -17,8 +17,9 @@ in the root directory of the project.
 Add the following variables to your `.env` file:
 
 ```env
-AZURE_STORAGE_ACCOUNT_NAME=your_storage_account_name
-AZURE_STORAGE_ACCOUNT_KEY=your_storage_account_key
+PROJECT_ENDPOINT=YOUR_PROJECT_ENDPOINT
+AZURE_STORAGE_CONNECTION_STRING=AZURE_STORAGE_CONNECTION_STRING
+DATABASE_URL=YOUR_DATABASE_URL
 ```
 
 Replace the placeholder values with your own Azure Storage Account credentials.
@@ -46,8 +47,9 @@ python app.py
 For reference, the required environment variables are:
 
 ```env
-AZURE_STORAGE_ACCOUNT_NAME=
-AZURE_STORAGE_ACCOUNT_KEY=
+PROJECT_ENDPOINT=YOUR_PROJECT_ENDPOINT
+AZURE_STORAGE_CONNECTION_STRING=AZURE_STORAGE_CONNECTION_STRING
+DATABASE_URL=YOUR_DATABASE_URL
 ```
 
 Never commit your actual `.env` file or expose your Azure credentials publicly.
